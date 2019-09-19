@@ -4,9 +4,11 @@ const request = require('request')
 
 let app
 before(() => {
-  app = require('./app.js')
-  global.host = 'http://localhost:' + app.server.address().port
-  request.debug = false
+  setTimeout(()=>{
+    app = require('./app.js')
+    global.host = 'http://localhost:' + app.server.address().port
+    request.debug = false
+  },3000)
 })
 after((done) => {
   app.server.close(done)
