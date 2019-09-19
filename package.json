@@ -40,5 +40,9 @@
     "lint-staged": "^9.2.1",
     "mocha": "^6.1.4",
     "power-assert": "^1.6.1"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
   }
 }
